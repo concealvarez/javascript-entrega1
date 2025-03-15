@@ -1,12 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Finanzas</title>
+    <link rel="stylesheet" href="main.css">
     <script defer src="main.js"></script>
-    <title>Document</title>
 </head>
 <body>
-    
+    <header>
+        <h1>Registro de Finanzas</h1>
+    </header>
+    <main>
+        <div class="saludo">
+            <span class="nombre-contenedor">
+                <label for="nombre">Nombre:</label> 
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            </span>
+            <span class="button-contenedor">
+                <button  id="btn-nombre" type="submit">Enviar</button>
+            </span>
+            <p id="texto"></p>
+        </div>
+        <form id="formulario">
+            <div class="tipo estilo">
+                <label for="ingreso_egreso">Indique si es un ingreso o un egreso:</label>
+                <select id="ingreso_egreso" name="ingreso_egreso">
+                    <option value="">Seleccione una opción</option>
+                    <option value="Ingreso">Ingreso</option>
+                    <option value="Egreso">Egreso</option>
+                </select>
+            </div>
+            <div class="monto-contenedor estilo">
+                <label for="monto">Monto:</label>
+                <input type="number" id="monto" name="monto" placeholder="Ingrese el monto" min="0">
+            </div>
+            <div class="concepto-contenedor estilo">
+                <label for="concepto">Concepto:</label>
+                <input type="text" id="concepto" name="concepto" placeholder="Ingrese el concepto">
+            </div>
+            <button id="btn-formulario" type="submit">Enviar formulario</button>
+        </form>
+        <div class="tabla-contenedor">
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>Concepto</th>
+                        <th>Monto</th>
+                        <th>Tipo</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo-tabla">
+                </tbody>
+            </table>
+        </div>
+        <div class="recuperar_datos">
+            <button id="btn-recuperar">Recuperar datos</button>
+        </div>
+    </main>
 </body>
 </html>

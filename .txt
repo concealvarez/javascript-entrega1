@@ -1,0 +1,11 @@
+- Pedirle al usuario que nos indique su nombre
+- Saludar al usuario con una ventana emerjente
+- Formulario:
+    Ingreso o egreso
+    Monto (si o si deben ser numeros, avisar al usuario)
+    Concepto
+    Fecha
+- Ingresar los datos del bucle en un cuadro y vaciar el formulario para neuvos datos 
+- Crear un boton de filtro para poder buscar algun dato
+- Guardar en el storage los datos 
+- Crear una opcion para eliminar los datos pero guardarlos en el storage y poder recuperarlos
